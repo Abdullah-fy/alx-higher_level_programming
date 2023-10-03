@@ -1,0 +1,5 @@
+#!/bin/bash
+python3 -c $PYCODE
+
+#to run code inside file you will use python3 + the name of the file python my_script.py
+#to run a code directly use the code above python -c "print('Hello, World!')"
