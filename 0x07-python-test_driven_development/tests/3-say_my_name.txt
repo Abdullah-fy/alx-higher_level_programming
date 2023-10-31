@@ -1,0 +1,21 @@
+this module define say_my _name function that print My name is firstname + secound name
+
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now use it
+
+>>> say_my_name("John", "Smith")
+My name is John Smith
+>>> say_my_name(12, "White")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+check for 2nd argument
+>>> say_my_name("mark", 22)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+check
+>>> say_my_name("", "22")
+My name is  22

@@ -1,0 +1,34 @@
+
+the ''0-add_integer'' module
+===========================
+
+Using ''add_integer''
+--------------------
+
+ >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+
+>>> add_integer(2, 3)
+5
+
+
+The function also work with float number
+>>> add_integer(2.0, 3.0)
+5
+
+''add_integer()'' expects that both argument are either integer or floats
+if not TypeError is raised
+
+>>> add_integer("hello", 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(2, "hello")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
